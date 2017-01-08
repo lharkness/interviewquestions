@@ -9,6 +9,10 @@ import java.util.Collection;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
+/**
+ * Test suite for the NumberStringifier.  Gets its parameters from
+ * the Num,berStringifierParametersProvider.
+ */
 @RunWith(Parameterized.class)
 public class NumberStringfierTest {
 

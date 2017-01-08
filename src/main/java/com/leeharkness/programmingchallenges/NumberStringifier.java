@@ -1,10 +1,18 @@
 package com.leeharkness.programmingchallenges;
 
 /**
- *
+ * Holds methods which support converting decimal numbers
+ * to their String format (e.g. 1 = One, 24 = "Twenty Four".
  */
 class NumberStringifier {
 
+    /**
+     * Handles numbers below 1000.  It pulls out units,
+     * tens and hundreds and builds of the String representation
+     * based on those values.
+     * @param number The number to convert
+     * @return the String format of number
+     */
     static String simpleStringify(int number) {
         if (number >= 1000) {
             return "invalid input";
@@ -50,6 +58,13 @@ class NumberStringifier {
 
     }
 
+    /**
+     * Handles converting tens to their String format
+     * e.g. 10 = Ten, 20 = Twenty, 14 = Fourteen
+     * @param value The value to convert
+     * @param units the units value (needed for teens)
+     * @return The String format of value
+     */
     private static String makeTens(int value, int units) {
         String retVal = null;
           if (value > 1) {
@@ -119,6 +134,12 @@ class NumberStringifier {
           return retVal;
     }
 
+    /**
+     * Handles converting units to String format
+     * e.g. 1 = One, 9 = Nine
+     * @param value the value to convert to String representation
+     * @return The string representation of value
+     */
     private static String makeUnits(int value) {
         String retVal = null;
         switch (value) {

@@ -9,6 +9,10 @@ import java.util.Collection;
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
 
+/**
+ * Test suite to test the Binary Detector class.
+ * Gets its parameters from a parameter provider class
+ */
 @RunWith(Parameterized.class)
 public class BinaryDetectorTest {
 
