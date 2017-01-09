@@ -3,7 +3,7 @@ package com.leeharkness.programmingchallenges;
 import java.util.Arrays;
 import java.util.Collection;
 
-public class BinaryTestParametersProvider {
+class BinaryTestParametersProvider {
     static Collection<Object[]> provide(){
         return Arrays.asList(new Object[][] {
                 { "1",      true },
